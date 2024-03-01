@@ -2,6 +2,7 @@ const express = require('express');
 const chalk = require('chalk');
 const debug = require('debug')('app');
 const morgan = require('morgan');
+const customer = require("./src/Data/customer.json")
 const path = require('path');
 
 const app = express();
@@ -17,11 +18,16 @@ app.set("view engine", "ejs")
 
 app.get('/', (req, res) => {
 
-    res.render('index', { 
+    res.render('index', 
+    { 
         username: 'Yeen', 
-        customer: ["Yeen", "Mid", "Zeen", "Mom"],
-        title : 'Home Page' 
-    });
+        title : 'Home Page',
+        customer,
+    },
+    
+    );
+
+    
 
 });
 

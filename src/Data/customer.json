@@ -1,0 +1,25 @@
+[
+      {
+        "name": "Yeen",
+        "depart" :[
+            {
+                "platform": "PS",
+                "price" : 1800
+            },
+            {
+                "platform": "nin",
+                "price" : 1500
+            }
+        ]
+      },
+      {
+        "name": "Mid"
+      },
+      {
+        "name": "Zeen"
+      },
+      {
+        "name": "Mom"
+      }
+    ]
+  
